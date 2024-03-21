@@ -8,10 +8,16 @@ environment {
     PATH = "/opt/apache-maven-3.9.6/bin:$PATH"
 }
     stages {
-        stage('clean workspace') {
+        stage('CLEAN') {
             steps {
                 sh 'mvn clean'
             }
         }
+        stage('COMPILE') {
+            steps {
+                sh 'mvn compile'
+            }
+        }
+
     }
 }
