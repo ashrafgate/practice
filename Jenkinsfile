@@ -28,6 +28,11 @@ environment {
                 sh 'mvn package'
             }
         }
+        stage('INSTALL') {
+            steps {
+                sh 'mvn install'
+            }
+        }
 
     }
 }
