@@ -33,6 +33,11 @@ environment {
                 sh 'mvn install'
             }
         }
+        stage('DEPLOY') {
+            steps {
+                sh 'mvn deploy'
+            }
+        }
 
     }
 }
