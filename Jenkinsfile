@@ -23,6 +23,11 @@ environment {
                 sh 'mvn test'
             }
         }
+        stage('PACKAGE') {
+            steps {
+                sh 'mvn package'
+            }
+        }
 
     }
 }
